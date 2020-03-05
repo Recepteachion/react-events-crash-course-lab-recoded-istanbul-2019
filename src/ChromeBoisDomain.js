@@ -7,7 +7,7 @@ export default class ChromeBoisDomain extends Component {
   handleMouseMove = (event) => {
     let x = event.clientX
     let y = event.clientY
-    drawChromeBoiAtCoords(x,y)
+    return drawChromeBoiAtCoords(x,y)
     
   }
     /* TODO: This method should capture the `x` and `y` coordinates of the mouse
@@ -21,7 +21,7 @@ export default class ChromeBoisDomain extends Component {
   // }
   
   handleOnClick = () =>{
-    
+    return toggleCycling ()
   }
   /* TODO: Create an event handler which, when fired, invokes the provided
    * `toggleCycling` function with no arguments. Don't forget the click event
