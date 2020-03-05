@@ -35,9 +35,9 @@ export default class ChromeBoisDomain extends Component {
   /* if the key pressed was 's', then it should call `resize` with '-' 
    */
   handleOnKeyDown =(event)=>{
-    if(event.target.value==="+"){
+    if(event.keyCode==="+"){
       return resize("+")
-    }else if(event.target.value==="s"){
+    }else if(event.keyCode==="s"){
       return resize("-")
     }
     
